@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J02-007</title>
+
+    <link rel="stylesheet" type="text/css" href="resources/site/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="resources/site/css/culture/m_trinity.css">
+    <link rel="stylesheet" type="text/css" href="resources/site/css/culture/slick.css">
+    
+    <script type="text/javascript" charset="utf-8" src="resources/site/js/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="resources/site/js/vendor/swiper.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="resources/site/js/trinity.js"></script>
+</head>
+<body id="TRINITY_BODY">
+    <div id="TRINITY_LAYOUT">
+        <section id="TRINITY_CONTENTS">
+            <div class="contents">
+                <h1 class="gu_kr_title">월간일정</h1>
+                <div class="inner">
+                    <div class="searchBar">
+                        <span>일정</span>
+                        <select name="plan_year" id="plan_year">
+                            <option value="2023">2023</option>
+                        </select>
+                        <select name="plan_month" id="plan_month">
+                            <option value="4">4월</option>
+                        </select>
+                        <button>
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+
+                <h1 class="gu_kr_title">2023년 4월</h1>
+                <div class="inner">
+                    <div class="planMonth">
+                        <ul>
+                            <li>
+                                <figure><img src="https://placehold.co/300x500" alt="" class="w100"></figure>
+                                <div>Artist Of The Week_Anthony Neil Dart</div>
+                                <p>2023.01.02</p>
+                                <button class="btn_red">예매하기</button>
+                                <!--button class="btn_disabled">예매 준비 중</button-->
+                            </li>
+                            <li>
+                                <figure><img src="https://placehold.co/300x500" alt="" class="w100"></figure>
+                                <div>Artist Of The Week_Anthony Neil Dart</div>
+                                <p>2023.01.02</p>
+                                <button class="btn_red">예매하기</button>
+                                <!--button class="btn_disabled">예매 준비 중</button-->
+                            </li>
+                            <li>
+                                <figure><img src="https://placehold.co/300x500" alt="" class="w100"></figure>
+                                <div>Artist Of The Week_Anthony Neil Dart</div>
+                                <p>2023.01.02</p>
+                                <button class="btn_red">예매하기</button>
+                                <!--button class="btn_disabled">예매 준비 중</button-->
+                            </li>
+                            <li>
+                                <figure><img src="https://placehold.co/300x500" alt="" class="w100"></figure>
+                                <div>Artist Of The Week_Anthony Neil Dart</div>
+                                <p>2023.01.02</p>
+                                <button class="btn_red">예매하기</button>
+                                <!--button class="btn_disabled">예매 준비 중</button-->
+                            </li>
+                            <li>
+                                <figure><img src="https://placehold.co/300x500" alt="" class="w100"></figure>
+                                <div>Artist Of The Week_Anthony Neil Dart</div>
+                                <p>2023.01.02</p>
+                                <button class="btn_red">예매하기</button>
+                                <!--button class="btn_disabled">예매 준비 중</button-->
+                            </li>
+                            <li>
+                                <figure><img src="https://placehold.co/300x500" alt="" class="w100"></figure>
+                                <div>Artist Of The Week_Anthony Neil Dart</div>
+                                <p>2023.01.02</p>
+                                <button class="btn_red">예매하기</button>
+                                <!--button class="btn_disabled">예매 준비 중</button-->
+                            </li>
+                        </ul>
+                        <div class="gu_paging" id="pager"><span><a href="javascript:void(0);" class="on">1</a><a href="./list.do?pg=2&amp;pgSz=10&amp;">2</a><a href="./list.do?pg=3&amp;pgSz=10&amp;">3</a></span></div>
+                    </div>
+                    <div class="eventbanner mt_60">
+
+
+                    </div>
+                </div>
+
+                <ul class="slide_7">
+                    <li><img src="resources/site/img/trinity/banner_mo.png" alt="" class="w100"></li>
+                    <li><img src="resources/site/img/trinity/banner_mo.png" alt="" class="w100"></li>
+                    <li><img src="resources/site/img/trinity/banner_mo.png" alt="" class="w100"></li>
+                </ul>
+
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="resources/site/js/vendor/slick.min.js"></script>
+  
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slide_7').slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+      });
+    </script>
+
+</body>
+</html>

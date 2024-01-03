@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+/**
+ fonts set
+ - kr => g : 고딕, m : 명조
+ - en => 네이밍
+*/
+.kr_g_400 {font-family:'SDGothic', sans-serif; font-weight: 400;}
+.kr_g_600 {font-family:'SDGothic', sans-serif; font-weight: 600;}
+.kr_m_500 {font-family:'SDMyeongjo', sans-serif; font-weight: 500;}
+.en_gill_200 {font-family:'GillSans', 'SDGothic', sans-serif; font-weight: 300;}
+.en_gill_400 {font-family:'GillSans', 'SDGothic', sans-serif; font-weight: 400;}
+.en_gill_500 {font-family:'GillSans', 'SDGothic', sans-serif; font-weight: 600;}
+.en_gara_400 {font-family:'Garamond', 'SDGothic', sans-serif; font-weight: 400;}
+
+
+/**********************
+        INDICATOR
+    */
+#INDICATOR {position:relative; text-align: right; font-size:0; height:0; top:20px; z-index:10;}
+#INDICATOR a {position:relative; display: inline-block; font-size:12px; color:#666666; line-height:1; vertical-align: top;}
+#INDICATOR a:after {content:"/"; display: inline-block; padding:0 6px;}
+#INDICATOR a span {display:inline-block; vertical-align: top; position: relative;}
+#INDICATOR a span:after {content:""; display: inline-block; position: absolute; left:50%; bottom:-3px; width:100%; height:1px; background-color:#666666; vertical-align: top; margin-top:1px; transition:all 0.2s;
+    transform:translate(-50%,0);
+    -ms-transform:translate(-50%,0);
+    -webkit-transform:translate(-50%,0);
+    -moz-transform:translate(-50%,0);
+    -o-transform:translate(-50%,0);
+}
+#INDICATOR a span:hover:after {animation:kr_line_btn_ani 0.3s forwards;}
+#INDICATOR a:last-child:after {content:none;}
+#INDICATOR a:last-child span:after {content:none;}
